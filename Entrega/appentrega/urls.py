@@ -7,5 +7,6 @@ urlpatterns = [
     path("sucursales/", vista_sucursales),
     path("autores/", vista_autores),
     path("miembros/", vista_miembros),
+    path("inicio/", vista_inicio),
 
 ]
