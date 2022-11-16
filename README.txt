@@ -9,7 +9,7 @@ Instrucciones de uso y control:
 
 1. Descargar el repositorio: Entrega desde github
 2. Dentro encontraremos dos carpetas: Entrega (project principal) y appentrega(aplicacion)
-3. Desde una terminal VSC ejecutar: python manage.py runserver
+3. Desde una terminal VSC, parados al mismo nivel del "manage.py", ejecutar: python manage.py runserver
 4. Acceder al servidor virtual, a la pagina de inicio: http://127.0.0.1:8000/appentrega/inicio/ 
 5. Desde http://127.0.0.1:8000/appentrega/inicio/ podremos navegar por toda la web
 6. Dentro del home encontraremos un texto de bienvenida y algunas aclaraciones
