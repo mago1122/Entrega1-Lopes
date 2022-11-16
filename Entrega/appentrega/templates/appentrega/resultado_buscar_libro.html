@@ -1,0 +1,15 @@
+{% extends 'appentrega/inicio.html' %}
+
+{% block contenido %}
+
+<ul>
+
+    {% for libro in libros %}
+
+    <li>{{libro.titulo}} de: {{libro.autor}}</li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

@@ -9,5 +9,6 @@ urlpatterns = [
     path("miembros/", vista_miembros),
     path("inicio/", vista_inicio),
     path("buscar/", buscar_libro),
+    path("resultados/", resultado_buscar_libro)
 
 ]

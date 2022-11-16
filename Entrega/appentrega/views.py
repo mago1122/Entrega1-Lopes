@@ -69,3 +69,10 @@ def buscar_libro(request):
 
     return render(request, "appentrega/busqueda_libros.html")
     
+def resultado_buscar_libro(request):
+
+    nombre_libro = request.GET["nombre_libro"]
+    libros = Libros.objects.filter(titulo__icontains=nombre_libro)
+
+    return render(request, "appentrega/resultado_buscar_libro.html", {"libros": libros})
+    
