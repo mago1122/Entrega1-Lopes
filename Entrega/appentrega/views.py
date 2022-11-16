@@ -6,6 +6,7 @@ from django.template import Template, Context
 # Create your views here.
 
 def vista_inicio(request):
+
     return render(request, "appentrega/inicio.html")
 
 
@@ -62,5 +63,9 @@ def vista_miembros(request):
         miembro = Miembros(nombre=nombre_miembro, apellido=apellido_miembro, email=email_miembro)
         miembro.save()
 
-
     return render(request, "appentrega/miembros.html")
+
+def buscar_libro(request):
+
+    return render(request, "appentrega/busqueda_libros.html")
+    
