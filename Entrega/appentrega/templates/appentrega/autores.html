@@ -2,6 +2,19 @@
 
 {% block contenido %}
 
-<h1>Formulario autores</h1>
+    <h1>Formulario autores</h1>
+    
+    <br><br>
+    
+    <form action="/appentrega/autores/" method="post">
+        {% csrf_token %}
+
+        <p>Titulo: <input type="text" name="nombre"> </p>
+        <p>Autor: <input type="text" name="autor"> </p>
+        <p>Precio: <input type="number" name="precio"> </p>
+
+        <input type="submit" value="Agregar Autor">
+
+    </form>
 
 {% endblock %}
