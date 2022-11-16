@@ -9,9 +9,9 @@
     <form action="/appentrega/autores/" method="post">
         {% csrf_token %}
 
-        <p>Titulo: <input type="text" name="nombre"> </p>
-        <p>Autor: <input type="text" name="autor"> </p>
-        <p>Precio: <input type="number" name="precio"> </p>
+        <p>Nombre: <input type="text" name="nombre"> </p>
+        <p>Apellido: <input type="text" name="autor"> </p>
+        <p>Año de nacimiento: <input type="date" name="año_nacimiento"> </p>
 
         <input type="submit" value="Agregar Autor">
 
