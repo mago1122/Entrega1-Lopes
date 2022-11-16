@@ -6,18 +6,16 @@ from django.template import Template, Context
 # Create your views here.
 
 def vista_inicio(request):
-
     return render(request, "appentrega/inicio.html")
 
-
 def vista_libros(request):
-    return HttpResponse("Estas en la vista: formulario de libros")
+    return render(request, "appentrega/libros.html")
 
 def vista_sucursales(request):
-    return HttpResponse("Estas en la vista: formulario de sucursales")
+    return render(request, "appentrega/sucursales.html")
 
 def vista_autores(request):
-    return HttpResponse("Estas en la vista: formulario de autores")
+    return render(request, "appentrega/autores.html")
 
 def vista_miembros(request):
-    return HttpResponse("Estas en la vista: formulario de miembros")
+    return render(request, "appentrega/miembros.html")

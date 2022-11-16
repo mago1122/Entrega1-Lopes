@@ -42,9 +42,11 @@
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
+    {% block contenido %}
                         <h2>Bloque de contenido - Content block</h2>
                         <p class="lead">Esta seccion de la web irá cambiando de acuerdo a la vista hija que uses.</p>
                         <p class="mb-0">La consigna solicita que se aplique: Herencia de HTML, que es esta misma mecanica que estoy usando en este template. Por lo menos tres clases models, en mi caso hice 4: libros, autores, sucursales y miembros. Pide tambien tres formularios para cargar datos a los tres modelos, cosa que tambien eh implementado, los diferentes formularios pueden ser accedidos desde los links en la barra de navegacion. Por otro lado tambien se pide un formulario de busqueda, tambien implementado xxx, y finalmente un readme, que esta adjunto en GitHub.</p>
+    {% endblock %}                       
                     </div>
                 </div>
             </div>
